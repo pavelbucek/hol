@@ -1,0 +1,6 @@
+
+module characters {
+
+	exports character;
+
+}
