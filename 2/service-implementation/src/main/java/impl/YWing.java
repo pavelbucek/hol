@@ -2,7 +2,7 @@ package impl;
 
 import service.StarFighter;
 
-public class YWing implements StarFighter {
+public class YWing extends AbstractStarFighter {
 
     public String getName() {
         return "Y-Wing";
@@ -14,10 +14,5 @@ public class YWing implements StarFighter {
 
     public int getShieldsSBD() {
         return 75;
-    }
-
-    @Override
-    public String toString() {
-        return "[" + getName() + "] Shields: " + getShieldsSBD() + " SBD, Top Speed: " + getShieldsSBD() + " MGLT";
     }
 }

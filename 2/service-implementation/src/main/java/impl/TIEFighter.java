@@ -45,7 +45,7 @@ import service.StarFighter;
 /**
  * @author Pavel Bucek (pavel.bucek at oracle.com)
  */
-public class TIEFighter implements StarFighter {
+public class TIEFighter extends AbstractStarFighter {
 
     public String getName() {
         return "TIE Fighter";
@@ -59,8 +59,4 @@ public class TIEFighter implements StarFighter {
         return 0;
     }
 
-    @Override
-    public String toString() {
-        return "[" + getName() + "] Shields: " + getShieldsSBD() + " SBD, Top Speed: " + getShieldsSBD() + " MGLT";
-    }
 }

@@ -2,7 +2,7 @@ package impl;
 
 import service.StarFighter;
 
-public class TIEInterceptor implements StarFighter {
+public class TIEInterceptor extends AbstractStarFighter {
 
     public String getName() {
         return "TIE Interceptor";
@@ -14,10 +14,5 @@ public class TIEInterceptor implements StarFighter {
 
     public int getShieldsSBD() {
         return 0;
-    }
-
-    @Override
-    public String toString() {
-        return "[" + getName() + "] Shields: " + getShieldsSBD() + " SBD, Top Speed: " + getShieldsSBD() + " MGLT";
     }
 }

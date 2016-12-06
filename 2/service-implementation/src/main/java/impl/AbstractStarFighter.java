@@ -45,8 +45,11 @@ import service.StarFighter;
 /**
  * @author Pavel Bucek (pavel.bucek at oracle.com)
  */
-public interface AbstractStarFighter extends StarFighter {
+public abstract class AbstractStarFighter implements StarFighter {
 
-
+    @Override
+    public String toString() {
+        return "[" + getName() + "] Shields: " + getShieldsSBD() + " SBD, Top Speed: " + getShieldsSBD() + " MGLT";
+    }
 
 }
